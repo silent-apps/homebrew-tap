@@ -2,10 +2,11 @@ cask "devbar" do
   # DevBar updates itself with Sparkle (auto_updates): the cask follows the latest release
   # instead of pinning one, so it never needs a bump. The archive's EdDSA signature and its
   # Developer ID notarization are what vouch for it, checked by Sparkle and Gatekeeper.
+  # Served by the public Pages site of the private devbar repository.
   version :latest
   sha256 :no_check
 
-  url "https://github.com/silent-apps/devbar/releases/latest/download/DevBar.zip"
+  url "https://silent-apps.github.io/devbar/DevBar.zip"
   name "DevBar"
   desc "Menu bar app for Xcode caches on an external disk and a GitHub runner"
   homepage "https://github.com/silent-apps/devbar"
